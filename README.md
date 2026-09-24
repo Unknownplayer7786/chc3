@@ -10,8 +10,8 @@ index.html            Main page
 404.html              Not-found page
 css/styles.css        All styles (responsive, reduced-motion, print)
 js/main.js            Interactions (menu, filters, FAQ, copy, map, reveals)
-assets/fonts/         Cormorant Garamond + Inter (woff2, latin subset)
-assets/img/           Logo, hero and section images (WebP + JPEG), icons, OG image
+assets/fonts/         Bricolage Grotesque, Karla, Caveat (woff2, latin subset)
+assets/img/           Logo, section photos (WebP + JPEG), icons, OG image
 assets/care-homoeo-clinic.vcf   Downloadable contact card
 site.webmanifest, favicon.ico, apple-touch-icon.png, robots.txt, .nojekyll
 ```
@@ -23,8 +23,8 @@ python3 -m http.server 8000
 Then open http://localhost:8000.
 
 ## Deploy
-You can serve the folder from any static host (GitHub Pages, Netlify, Vercel, Cloudflare Pages).
-Note that GitHub Pages on a **private** repo needs a paid GitHub plan.
+The site is live on GitHub Pages at https://unknownplayer7786.github.io/chc3/ (this folder served from `main`).
+Any static host works: GitHub Pages, Netlify, Vercel, Cloudflare Pages.
 
 ## Where the clinic details come from
 - Name, address, phone and Reg. No. 45844 come from the previous site (chc2) and match the doctor's Practo profile.
@@ -32,3 +32,5 @@ Note that GitHub Pages on a **private** repo needs a paid GitHub plan.
 - The list of 14 treatments comes from the Practo profile.
 - The clinic chose not to show timings or fees; patients are asked to call.
 - The 5.0 satisfaction rating is supplied by the clinic.
+- The two photographs are AI-generated illustrations used as placeholders, not pictures of the actual clinic or doctor.
+  Replace them with real photos before launch if possible.
