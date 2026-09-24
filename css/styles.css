@@ -805,7 +805,7 @@ body.menu-open .action-bar { transform: translateY(160%); }
   .stamp strong { font-size: 1.15rem; }
 
   .receipt-inner { justify-content: space-between; }
-  .visit-grid, .doctor-grid, .faq-grid, .visit-panel { grid-template-columns: 1fr; }
+  .visit-grid, .doctor-grid, .faq-grid, .visit-panel, .visit-aside { grid-template-columns: minmax(0, 1fr); }
   .faq-grid .section-head { position: static; }
   .doctor-id { max-width: 520px; margin-inline: auto; }
   .visit-aside { grid-template-columns: 1fr; }
@@ -823,7 +823,8 @@ body.menu-open .action-bar { transform: translateY(160%); }
   .brand-name { font-size: 1.12rem; }
   .brand-mark { width: 34px; height: 34px; }
   .hero-actions .btn { flex: 1 1 100%; justify-content: center; }
-  .receipt-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+  .receipt-inner { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .receipt-item { min-width: 0; }
   .treatments { grid-template-columns: 1fr; }
   .checklist li { grid-template-columns: 1fr; gap: 10px; }
   .check { margin-top: 0; }
