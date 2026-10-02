@@ -237,7 +237,7 @@ body.menu-open .site-header {
   display: inline-flex; align-items: center; gap: 12px;
   text-decoration: none; min-width: 0;
 }
-.brand-mark { width: 40px; height: 40px; flex: none; }
+.brand-mark { width: 40px; height: 40px; flex: none; display: block; }
 .brand-text { display: flex; flex-direction: column; min-width: 0; line-height: 1.15; }
 .brand-name {
   font-family: var(--display); font-weight: 700; font-size: 1.22rem; letter-spacing: -0.01em;
@@ -782,6 +782,15 @@ body.menu-open .action-bar { transform: translateY(160%); }
 /* ---------- Reveal animation ---------- */
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
 .js .reveal.is-visible { opacity: 1; transform: none; }
+
+/* ---------- Desktop refinements ---------- */
+@media (min-width: 961px) {
+  .visit-aside { position: sticky; top: calc(var(--header-h) + 28px); }
+  .receipt-item:not(:last-child) { border-right: 2px dashed var(--line); padding-right: 30px; }
+  .receipt-item:not(:first-child) { padding-left: 2px; }
+  .brand-mark { transition: transform .5s var(--ease); }
+  .brand:hover .brand-mark { transform: rotate(-6deg) scale(1.06); }
+}
 
 /* =========================================================
    Responsive

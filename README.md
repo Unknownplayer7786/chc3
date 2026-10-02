@@ -11,7 +11,7 @@ index.html            Main page
 css/styles.css        All styles (responsive, reduced-motion, print)
 js/main.js            Interactions (menu, filters, FAQ, copy, map, reveals)
 assets/fonts/         Bricolage Grotesque, Karla, Caveat (woff2, latin subset)
-assets/img/           Logo, section photos (WebP + JPEG), icons, OG image
+assets/img/           Brand emblem (SVG), section photos (WebP + JPEG), icons, OG image
 assets/care-homoeo-clinic.vcf   Downloadable contact card
 site.webmanifest, favicon.ico, apple-touch-icon.png, robots.txt, .nojekyll
 ```
@@ -32,5 +32,9 @@ Any static host works: GitHub Pages, Netlify, Vercel, Cloudflare Pages.
 - The list of 14 treatments comes from the Practo profile.
 - The clinic chose not to show timings or fees; patients are asked to call.
 - The 5.0 satisfaction rating is supplied by the clinic.
+- The brand emblem is a redrawn SVG of the clinic's original mark (a leaf-shaped cupping hand with three remedy
+  globules), now in the site's ink/sage/marigold palette. Favicons, app and PWA icons are generated from it
+  (`assets/img/emblem.svg` is the source; `logo.png` is a 160px transparent raster). The original raster logo
+  remains in the git history.
 - The two photographs are AI-generated illustrations used as placeholders, not pictures of the actual clinic or doctor.
   Replace them with real photos before launch if possible.

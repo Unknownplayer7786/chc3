@@ -11,16 +11,22 @@
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .nf { min-height: 100vh; min-height: 100dvh; display: grid; place-items: center; text-align: center; padding: 32px; }
-    .nf img { width: 64px; height: 64px; margin: 0 auto 24px; }
+    
     .nf p { color: var(--muted); margin: 0 auto 28px; max-width: 40ch; }
     .nf .kicker { justify-self: center; }
     .nf .kicker::after { content: " ✎"; }
+    .nf > div > svg { display: block; margin: 0 auto 24px; }
   </style>
 </head>
 <body>
   <main class="nf">
     <div>
-      <img src="assets/img/logo.png" width="64" height="64" alt="">
+      <svg viewBox="0 0 100 100" width="72" height="72" aria-hidden="true" focusable="false">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <g stroke="#a86a15" stroke-width="3.6" fill="#f7f2e8"><circle cx="34" cy="42" r="7.2"/><circle cx="58" cy="16" r="9.4"/><circle cx="82" cy="37" r="6"/></g>
+        <path d="M6 88 C10 94 24 97 40 95 C60 92 78 82 90 60 C94 52 97 40 98 28 C94 38 90 46 84 53 C78 59 70 65 62 67 C59 60 56 51 54 43 C50 51 44 58 36 61 C24 64 12 74 6 88 Z" fill="#4d6b52" stroke="#26221b" stroke-width="2.6"/>
+      </g>
+    </svg>
       <p class="kicker">Oops</p>
       <h1 class="section-title">This page slipped off the <em>clipboard.</em></h1>
       <p>The page you were looking for isn't here. The clinic's front desk is, though.</p>
